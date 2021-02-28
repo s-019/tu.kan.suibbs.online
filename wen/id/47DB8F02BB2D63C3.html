@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">    <title>edge语音获取</title>
+    <style>
+        body{
+            background-image:linear-gradient(to right,#0099CC,#00CCFF); 
+        }
+		h1{
+			color:#000;
+			opacity: 70%;
+		}
+		h4{
+			color:rgba(0,0,0,0.5);
+		    opacity: 70%;
+		}
+		h5{
+		    opacity: 70%;
+		}
+        #area{
+            background:white;
+            border-radius: 5px;
+            text-indent:2em;
+			opacity:0.5;
+			font-display:5px;
+			color:black;
+			font-size: 20px;
+        }
+    </style>
+<link rel="stylesheet" href="static/home-3044e44b4e.css">
+<link href="static/demo.css" rel="stylesheet" type="text/css">
+<link href="static/ns-default.css" rel="stylesheet" type="text/css">
+<link href="static/ns-style-attached.css" rel="stylesheet" type="text/css">
+<link href="static/ns-style-bar.css" rel="stylesheet" type="text/css">
+<link href="static/ns-style-growl.css" rel="stylesheet" type="text/css">
+<link href="static/ns-style-other.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<h1 align="center">Edge 语音引擎在线生成可读文字 V1.3</h1>
+	<h4 align="center">代码由 <a href="https://space.bilibili.com/513478635">@胖鼠奕德</a> / <a href="https://space.bilibili.com/198316802">@传说当中的帅锅</a> 提供。</h4>
+	<div align="center">
+    <textarea name="textarea_01" id="area" cols="80" rows="15" placeholder="请在这里输入想要朗读的文字"></textarea>
+		</div>
+	<div>
+		
+		</div>
+	<div class="home-menu">
+<a id="btn" >✔ 生成</a>
+		<a onclick="alertTips()">✎ 使用方法</a>
+			<script>
+		function alertTips(){
+alert('输入一段话然后按下生成按钮，在新的界面里点击Ctrl+Shift+U即可开始大声朗读，若想返回此界面只需点击F5进行刷新即可。');
+		}
+	</script>
+<a onclick="javascript:window.history.back()">❤ 返回到帅锅主站</a>
+</div>
+	<h5 align="center"><img src="static/bei.png">备案号：辽ICP备2021001172号-1 ©2021 传说当中的帅锅 在转载或复制前请先联系作者</h5>
+    <script>
+        document.getElementById("btn").onclick = function myFonction () {
+var utext = document.getElementById("area").value;
+var temp = document.createElement ("div");
+temp.textContent = utext;
+console.log(utext);
+document.write(temp.innerHTML)
+        }
+        
+    </script>
+</body>
+</html>
