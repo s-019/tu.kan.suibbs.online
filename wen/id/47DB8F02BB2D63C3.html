@@ -38,33 +38,22 @@
 <body>
 	<h1 align="center">Edge 语音引擎在线生成可读文字 V1.3</h1>
 	<h4 align="center">代码由 <a href="https://space.bilibili.com/513478635">@胖鼠奕德</a> / <a href="https://space.bilibili.com/198316802">@传说当中的帅锅</a> 提供。</h4>
-        <p>手机版由B站@随囧调试，并不关于帅锅的制作🌚</p>
+        <p>手机版由B站:随囧调试，并不属帅锅网站所有🌚</p>
 	<div align="center">
-    <textarea name="textarea_01" id="area" cols="25" rows="5" placeholder="请在这里输入想要朗读的文字"></textarea>
+    <textarea name="textarea_01" id="area" cols="25" rows="10" placeholder="请在这里输入想要朗读的文字，然后使用语音朗读🔊"></textarea>
 		</div>
 	<div>
 		
 		</div>
 	<div class="home-menu">
-<a id="btn" >✔ 生成</a>
-		<a onclick="alertTips()">✎ 使用方法</a>
+<a id="btn" >🆗生成</a>
+		<a onclick="alertTips()">❇️使用方法</a>
 			<script>
 		function alertTips(){
-alert('输入一段话然后按下生成按钮，在新的界面里点击Ctrl+Shift+U即可开始大声朗读，若想返回此界面只需点击F5进行刷新即可。');
+alert('输入一段话然后按下生成按钮，在新的界面里点击Ctrl+Shift+U即可开始大声朗读，若想返回此界面只需点击F5进行刷新即可。（仅edge浏览器有效，该网页作为测试）');
 		}
 	</script>
-<a onclick="javascript:window.history.back()">❤ 返回到帅锅主站</a>
+<a href="//shuaiguo.club">☢️返回到帅锅主站</a>
 </div>
-	<h5 align="center"><img src="static/bei.png">备案号：辽ICP备2021001172号-1 ©2021 传说当中的帅锅 在转载或复制前请先联系作者</h5>
-    <script>
-        document.getElementById("btn").onclick = function myFonction () {
-var utext = document.getElementById("area").value;
-var temp = document.createElement ("div");
-temp.textContent = utext;
-console.log(utext);
-document.write(temp.innerHTML)
-        }
-        
-    </script>
 </body>
 </html>
