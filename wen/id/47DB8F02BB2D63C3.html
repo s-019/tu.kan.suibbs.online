@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">    <title>edge语音获取</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+<title>edge语音获取</title>
     <style>
         body{
             background-image:linear-gradient(to right,#0099CC,#00CCFF); 
@@ -28,19 +29,18 @@
         }
     </style>
 <link rel="stylesheet" href="static/home-3044e44b4e.css">
-<link href="static/demo.css" rel="stylesheet" type="text/css">
-<link href="static/ns-default.css" rel="stylesheet" type="text/css">
-<link href="static/ns-style-attached.css" rel="stylesheet" type="text/css">
-<link href="static/ns-style-bar.css" rel="stylesheet" type="text/css">
-<link href="static/ns-style-growl.css" rel="stylesheet" type="text/css">
-<link href="static/ns-style-other.css" rel="stylesheet" type="text/css">
+<link href="//shuaiguo.club/static/demo.css" rel="stylesheet" type="text/css">
+<link href="//shuaiguo.club/static/ns-default.css" rel="stylesheet" type="text/css">
+<link href="//shuaiguo.club/static/ns-style-attached.css" rel="stylesheet" type="text/css">
+<link href="//shuaiguo.club/static/ns-style-bar.css" rel="stylesheet" type="text/css">
+<link href="//shuaiguo.club/static/ns-style-growl.css" rel="stylesheet" type="text/css">
+<link href="//shuaiguo.club/static/ns-style-other.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<h1 align="center">Edge语音引擎在线生成可读文字 V1.3</h1>
+	<h1 align="center">Edge 语音引擎在线生成可读文字 V1.3</h1>
 	<h4 align="center">代码由 <a href="https://space.bilibili.com/513478635">@胖鼠奕德</a> / <a href="https://space.bilibili.com/198316802">@传说当中的帅锅</a> 提供。</h4>
-        <p>手机版由<a href="https://space.bilibili.com/450347611">@随囧</a>搞作，并不属帅锅网站所有🌚</p>
-	<div align="center"<div>
-    <textarea name="textarea_01" id="area" cols="27.5" rows="7.5" placeholder="请在这里输入想要朗读的文字，然后使用语音朗读🔊"></textarea>
+	<div align="center">
+    <textarea name="textarea_01" id="area" cols="27.5" rows="5.5" placeholder="请在这里输入想要朗读的文字🔊"></textarea>
 		</div>
 	<div>
 		
@@ -50,12 +50,13 @@
 		<a onclick="alertTips()">❇️使用方法</a>
 			<script>
 		function alertTips(){
-alert('输入一段话然后按下生成按钮，在新的界面里点击Ctrl+Shift+U即可开始大声朗读，若想返回此界面只需点击F5进行刷新即可。（仅edge浏览器有效，该网页作为测试）');
+alert('输入一段话然后按下生成按钮，在新的界面里点击Ctrl+Shift+U即可开始大声朗读，若想返回此界面只需点击F5进行刷新即可。');
 		}
 	</script>
 <a href="//shuaiguo.club">☢️返回到帅锅主站</a>
-<a href="//shuaiguo.club/edge/edge.html">电脑版🖥️</a>
-<script>
+<a href="//shuaiguo.club/edge/edge.html">🖥️网页版</a>
+</div>
+ <script>
         document.getElementById("btn").onclick = function myFonction () {
 var utext = document.getElementById("area").value;
 var temp = document.createElement ("div");
@@ -65,6 +66,5 @@ document.write(temp.innerHTML)
         }
         
     </script>
-</div>
 </body>
 </html>
