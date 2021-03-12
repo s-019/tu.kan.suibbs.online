@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="referrer" content="no-referrer">
+    <title>播放器</title>
+    <style type="text/css">
+      html, body {width:100%;height:100%;margin:auto;overflow: hidden;}
+      body {display:flex;}
+      #mse {flex:auto;}
+    </style>
+    <script type="text/javascript">
+      window.addEventListener('resize',function(){document.getElementById('mse').style.height=window.innerHeight+'px';});
+    </script>
+  </head>
+  <body>
+    <div id="mse"></div>
+    <script src="//sf1-ttcdn-tos.pstatp.com/obj/unpkg/xgplayer/2.9.6/browser/index.js" charset="utf-8"></script>
+    <script src="//sf1-ttcdn-tos.pstatp.com/obj/unpkg/xgplayer-mp4/1.1.8/browser/index.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      let player=new Player({
+        id: 'mse',
+        autoplay: true,
+        volume: 0.3,
+        url:'https://static.dingtalk.com/media/lAbPBE1Xea-MrZnOJo-6us4mj7q6.mp4',
+        poster: "https://note.youdao.com/yws/api/personal/file/15367d821015df40b07abba7287d4431?method=download&shareKey=ff93ba712db6b0a01afbb413112d4a08&inline=true",
+        playsinline: true,
+        thumbnail: {
+            pic_num: 44,
+            width: 160,
+            height: 90,
+            col: 10,
+            row: 10,
+            urls: ['//s3.pstatp.com/cdn/expire-1-M/byted-player-videos/1.0.0/xgplayer-demo-thumbnail.jpg'],
+        },
+        height: window.innerHeight,
+        width: window.innerWidth,
+        whitelist: ['']
+      });
+      player.emit('resourceReady', [{ name: '超清', url: '//sf1-hscdn-tos.pstatp.com/obj/media-fe/xgplayer_doc_video/mp4/xgplayer-demo-720p.mp4' }, { name: '高清', url: '//sf1-hscdn-tos.pstatp.com/obj/media-fe/xgplayer_doc_video/mp4/xgplayer-demo-480p.mp4' }, { name: '标清', url: '//sf1-hscdn-tos.pstatp.com/obj/media-fe/xgplayer_doc_video/mp4/xgplayer-demo-360p.mp4' }]);
+    </script>
+  </body>
+</html>
