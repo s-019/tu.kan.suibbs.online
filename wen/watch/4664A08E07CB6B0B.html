@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
     <meta name="referrer" content="no-referrer">
-    <title>播放器</title>
+    <title>xgplayer</title>
     <style type="text/css">
       html, body {width:100%;height:100%;margin:auto;overflow: hidden;}
       body {display:flex;}
@@ -17,15 +17,17 @@
   <body>
     <div id="mse"></div>
     <script src="//sf1-ttcdn-tos.pstatp.com/obj/unpkg/xgplayer/2.9.6/browser/index.js" charset="utf-8"></script>
-    <script src="//sf1-ttcdn-tos.pstatp.com/obj/unpkg/xgplayer-mp4/1.1.8/browser/index.js" charset="utf-8"></script>
     <script type="text/javascript">
       let player=new Player({
         id: 'mse',
-        autoplay: true,
-        volume: 0.3,
+        autoplay: false,
+        volume: 0.5,
         url:'https://static.dingtalk.com/media/lAbPBE1Xea-MrZnOJo-6us4mj7q6.mp4',
         poster: "https://note.youdao.com/yws/api/personal/file/15367d821015df40b07abba7287d4431?method=download&shareKey=ff93ba712db6b0a01afbb413112d4a08&inline=true",
         playsinline: true,
+        height: window.innerHeight,
+        width: window.innerWidth
+      });
     </script>
   </body>
 </html>
