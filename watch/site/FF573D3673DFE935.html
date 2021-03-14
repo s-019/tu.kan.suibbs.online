@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="referrer" content="no-referrer">
+    <title>随囧図览中的🍉播放器</title>
+    <style type="text/css">
+      html, body {width:100%;height:100%;margin:auto;overflow: hidden;}
+      body {display:flex;}
+      #mse {flex:auto;}
+    </style>
+    <script type="text/javascript">
+      window.addEventListener('resize',function(){document.getElementById('mse').style.height=window.innerHeight+'px';});
+    </script>
+  </head>
+  <body>
+    <div id="mse"></div>
+    <script src="//sf1-ttcdn-tos.pstatp.com/obj/unpkg/xgplayer/2.9.6/browser/index.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      let player=new Player({
+        id: 'mse',
+        autoplay: false,
+        volume: 0.5,
+        url:'https://static.dingtalk.com/media/lAbPBFf_9ViqDMDOAnMV6s4CcxXq.mp4',
+        poster: "https://note.youdao.com/yws/api/personal/file/e7b0c6515b0dcc3dfc9b053ff31aceff?method=download&shareKey=77f296a7c95406f1c71e150477e537cd&inline=true",
+        playsinline: true,
+        height: window.innerHeight,
+        width: window.innerWidth
+      });
+    </script>
+  </body>
+</html>
 
