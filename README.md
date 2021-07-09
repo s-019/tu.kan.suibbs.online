@@ -18,6 +18,7 @@
 
 
 
-
+新网址：
 https://s-019.github.io/tu.kan.suibbs.online/video/
+主页：
 https://s-019.github.io/tu.kan.suibbs.online/
