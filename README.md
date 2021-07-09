@@ -16,3 +16,8 @@
 
 这是我们的最终决定，因为域名付不起，所以如果可以帮忙的话，可以联系我：Sui_bili@hotmail.com
 
+
+
+
+https://s-019.github.io/tu.kan.suibbs.online/video/
+https://s-019.github.io/tu.kan.suibbs.online/
