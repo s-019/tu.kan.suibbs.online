@@ -7,3 +7,12 @@
 
 我们最终决定重新开启tu.kan.suibbs.online
 但域名将不再绑定！
+
+
+
+如在访问tu.kan.suibbs.online，将无法访问
+
+
+
+这是我们的最终决定，因为域名付不起，所以如果可以帮忙的话，可以联系我：Sui_bili@hotmail.com
+
